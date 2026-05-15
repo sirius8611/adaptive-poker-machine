@@ -1,0 +1,19 @@
+[project]
+name = "adaptive-poker-machine"
+version = "0.1.0"
+description = "Adaptive poker player using ISMCTS with a Code World Model"
+requires-python = ">=3.11"
+dependencies = [
+    "treys>=0.1.8",
+    "torch>=2.0",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -15,3 +15,8 @@
 - 
 -
 ## Phase 4 (Last few weeks): Stress test + optimize the model on real play
+
+
+### Tips
+- Skim 10 papers -> choose 5
+- Experiement -> log models and hyperparameters
