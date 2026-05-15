@@ -187,7 +187,7 @@ class Trainer:
 
             anchor = z_opp[i].unsqueeze(0)
             positive = z_opp[pos_idx].unsqueeze(0)
-            negatives = z_opp[neg_idx].unsqueeze(0).unsqueeze(0)
+            negatives = z_opp[neg_idx].unsqueeze(0)  # (1, N, D)
 
             total_loss = total_loss + contrastive_adapter_loss(anchor, positive, negatives)
             num_pairs += 1
